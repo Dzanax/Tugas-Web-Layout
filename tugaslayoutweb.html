@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Layout Web</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #f9f9f9;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            padding: 0 30px 0;
+            position: relative;
+            left: 1%;
+
+        }
+
+        .video {
+            height: 150vh;
+          
+        }
+
+        .video video{
+            height: 100vh;
+            margin-top: 150px;
+        }
+
+        main{
+            background-color: black;
+        }
+
+        .cabang{
+            display: flex;
+            flex-direction: 1 1;
+            box-sizing: border-box;
+        }
+
+        .cabang .p {
+            position: absolute;
+            margin-top: 40%;
+            font-weight: 300px;
+        }
+
+        .cabang > * {
+            margin-left: 30px;
+        }
+
+        .cabang .list ul{
+            display: flex;
+            list-style: none outside none;
+            gap:2rem;
+            align-items: center;
+            padding: 0.5rem 0 0 0;
+            
+        }
+
+        .cabang .list ul li{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1px;
+        }
+
+        .cabang .list ul li a{
+            text-decoration: none;
+            color: #000;
+            font-size: large;
+        } 
+
+        .cabang .list ul li a:hover{
+            color:gold;
+        }
+
+        .cabang .list ul li:nth-child(7){
+            width: 10%;
+        }
+
+        .cabang .list ul li:nth-child(8){
+            width: 11%;
+        }
+
+        .cabang .img1{
+            width: 70px;
+            height: 70px;
+        }
+
+        .cabang .img2{
+            width: 120px;
+            height: 50px;
+        }
+
+        .cabang_lain ul{
+            display: flex;
+            gap:2rem;
+        }
+
+        .dropdown{
+            display: flex;
+            flex-direction: 1 1;
+            
+        }
+
+        .dropdown .pahlawan, .makin{
+            display: block;
+            margin-left: 20px;
+        }
+
+        .lokasi{
+            margin-left: 30px;
+        }
+
+        .content{
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .content div .mp4{
+            margin: 30px;
+            padding-right: 30%;
+            padding-top: 50%;
+        }
+
+        .content .backgraund1{
+            width: 700px;
+            height: 700px;
+        }
+
+        .wadahtext1 {
+            padding-left: 100%;
+            margin: 100px;
+            position: static;
+            display: flex;
+            flex-direction: 1 1;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .wadahtext1 .text1{
+            color: white;
+        }
+
+        .wadahtext2 {
+            padding-left: 100%;
+            margin: 100px;
+            position: static;
+            display: flex;
+            flex-direction: 1 1;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .text2{
+            color: white;
+        }
+
+        footer {
+            background-color: #fff;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo_mcd.png" width="60" alt="McDonald's Logo">
+        </div>
+        <div class="cabang">
+            <div class="list">
+                <ul>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Promo</a></li>
+                    <li><img class="img1" src="my-reward.svg" alt=""></li>
+                    <li><img class="img2" src="img_pkemon-go-7.png" alt=""></li>
+                    <li><a href="">Dunia Anak</a></li>
+                    <li><a href="">Berita Terkini</a></li>
+                    <li><a href="">Pahlawan di Sekitar Kita</a></li>
+                    <li><a href="">Makin Kenal Makin Sayang</a></li>
+                    <li style="height:50px; border-left: 1px solid #000; padding-left:25px ; padding-top: 14px;"><a href=""> Lokasi</a></li>
+                </ul>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="mp4">
+                <video class="backgraund1" autoplay loop muted playsinline>
+                    <source src="performance.gif" type="video/webm" />
+                  </video>
+                </div>
+                <div class="wadahtext1">
+                    <div class="text1">
+                        <h1>UNMATCHED</h1>
+                        <h1>PERFORMANCE</h1>
+                    </div>
+                </div>
+                <div class="wadahtext2">
+                    <div class="text2">
+                        <p>White more than 5 million pounds of thurst at</p>
+                     </div>
+                </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            <span>Copyright</span> &nbsp; &copy; 2024 Apple Inc. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
